@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="b2">
+    <div class="row">
+        <div class="container text-center">
+            <h1>Sofka - Trivia</h1>
+            <h4 id="preguntas">Preguntas</h4>
+        </div>
+    </div>
+    <div class="row bg-danger justify-content-between">
+        <div class="container">
+            <div id="User">
+                <h4 id="localUser">Usuario</h4> 
+                <h4 id="score">Puntaje</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container mt-2">
+            <div id="tablaScore">
+                <h5 id="bestScore">Mejor Puntaje</h5>
+                <h5 id="theBestScore"></h5>
+            </div>
+            <br>
+            <button type="button" class="btn btn-danger" id="close">Salir</button>
+            <div id="base">
+                <h5 id="level">Nivel</h5>
+                <br>
+                <h5 id="category">Category</h5>
+                <div class="row justify-content-center">
+                    <div class="btn-group-vertical" id="btns">
+                      <button type="button" class="btn btn-light" id="btn1">Resp1</button>
+                      <br>
+                      <button type="button" class="btn btn-light" id="btn2">Resp2</button>
+                      <br>
+                      <button type="button" class="btn btn-light" id="btn3">Resp3</button>
+                      <br>
+                      <button type="button" class="btn btn-light" id="btn4">Resp4</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./data_questions/data.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

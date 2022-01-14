@@ -1,0 +1,98 @@
+#b1{
+    background-color: rgb(100, 4, 209);
+    margin-top: 300px;
+}
+
+#b2{
+    background-image: url("img/particulas.png");
+    background-size: 30%;
+    background-color: rgb(118, 3, 185);
+}
+#b2 h1{
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+}
+#User{
+    background-color: white;
+    height: 100px;
+    width: 250px;
+}
+#base{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 400px;
+    margin-left: 580px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.5)
+}
+#btns{
+    margin-top: 150px;
+}
+#preguntas{
+    position: absolute;
+    margin-left: 540px ;
+    margin-top: 30px;
+}
+.btn:hover {
+    background : rgb(255, 217, 2);
+    cursor: pointer;
+}
+#category{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#level{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#tablaScore{
+    position: absolute;
+    background-color: white;
+    height: 100px;
+    width: 250px;   
+}
+#bestScore{
+    margin-left: 20px;
+}
+#u_ser{
+    height: 40px;
+}
+#btnUser{
+    height: 40px;
+    width: 190px;
+}
+#btnUser:hover{
+    background: blue;
+}
+#theBestScore{
+    margin-left: 20px;
+}
+#close{
+    position: absolute;
+    margin-top: 100px;
+    width: 250px;
+}
+#close:hover{
+    background-color: red;
+}
+#incogn{
+    width: 30%;
+    height: 60%;
+    margin-bottom: 500px;
+}
+#incogn2{
+    width: 30%;
+    height: 60%;
+    margin-left: 100px;
+}
+#quiz{
+    width: 30%;
+    height: 50%;
+}
+#localUser{
+    margin-left: 15px;
+}
+#score{
+    margin-left: 15px;
+}
