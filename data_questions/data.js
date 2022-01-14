@@ -166,7 +166,7 @@ const level_five = [
         options : ["14 horas", "5 horas", "8 horas", "11 horas"]
     }
 ]
-
+//Exporto cada nivel con sus preguntas dentro de un arreglo de objetos
 export const data = [
     level_one,
     level_two,

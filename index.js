@@ -1,6 +1,6 @@
-import { data } from "./data_questions/data.js";
+import { data } from "./data_questions/data.js"; //Importo las preguntas desde data_questions
 
-const data_quest = data;
+const data_quest = data; //Asigno toda la base de preguntas a una variable
 const arr = [];
 
 let controlLevel = 0;
@@ -14,11 +14,12 @@ let theUser = JSON.parse(data_user);
 console.log(data_user)
 
 document.addEventListener("DOMContentLoaded", function (e) {
+    //Controlo que el usuario este logueado
     if(data_user == null){
         alert("Ingrese un usuario");
         window.location = "login.html"
     } 
-
+//Pido al comienzo un número random entre 0 y 4 que va a corresponder a una pregunta de las 5 en el nivel correspondiente mientras el nivel no supere al 5
     if(controlLevel <= 5){
         random();
     }
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     if(theUser.score !== 0){
         document.getElementById("theBestScore").innerHTML = theUser[0].name + "-" + theUser[0].score;
     }
-        
+ //Agrego usuario, puntaje, preguntas, etc        
         let cont = 0; 
         console.log(theUser)
 
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     document.getElementById("btn4").innerHTML = theRandom.options[cont];
                 }       
             }
-
+//Agrego el evento click a cada botón 
     document.getElementById("btn1").addEventListener("click", function(){
         id = "btn1"
         selecCorrectQuest(id);
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById("close").addEventListener("click", closeSession);
  
 });
-
+//Función que comprueba que el botón seleccionado sea el que contiene la respuesta
 function selecCorrectQuest(id){
     let contentBtn = document.getElementById(id).textContent;
     console.log(contentBtn)
@@ -109,13 +110,13 @@ function selecCorrectQuest(id){
     }
   
 }
-
+//Función que me da una pregunta al azar
 function random(){
     let aleatorio = Math.floor(Math.random()*(data_quest[controlLevel].length));
     let seleccion = data_quest[controlLevel][aleatorio];
     theRandom = seleccion;
 }
-
+//Función que va pasando las preguntas a medida que se aumenta el nivel
 function addOtherLevels(){
     if(controlLevel == 5){
         confirm("Felicidades, superaste esta trivia");
@@ -151,7 +152,7 @@ function addOtherLevels(){
         }       
     }
 }
-
+//Función para salir si el usuario asi lo decide cosa que borra todo su progreso
 function closeSession(){
     localStorage.removeItem("Data");
     window.location = "login.html"

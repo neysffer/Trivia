@@ -1,10 +1,10 @@
 const arr = [];
 
 document.addEventListener("DOMContentLoaded", function(e){
+    //Agrego evento click al botón de aceptar
     document.getElementById("btnUser").addEventListener("click", aceptUser);
-
 });
-
+//Función que toma el nombre de usuario y lo guarda en un localStorage con un score definido en 0 al principio
 function aceptUser(){
     let user = document.getElementById("u_ser").value;
     
